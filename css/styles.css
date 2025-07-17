@@ -118,26 +118,19 @@
   }
 
   .feature-box-01 {
-   box-shadow: 10px 20px 19px rgba(0, 0, 0, .5);
-     background-color: #111111;
-  padding: 15% 12%;
-  position: relative;
-  z-index: 1;
-  overflow: hidden;
-  cursor: pointer;
-  transition: color 0.7s ease;
-  margin: 20px;
-   
-     height: 550px;
+    box-shadow: 10px 20px 19px rgba(0, 0, 0, .5);
+    background-color: #111111;
+    padding: 15% 12%;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    cursor: pointer;
+    transition: color 0.7s ease;
+    margin: 20px;
 
-      /* border-left: 2px solid transparent; 
-        border-top: 2px solid transparent; 
-  border-image: linear-gradient(to bottom, #c5c5c5, #111111) 1; 
-    border-image: linear-gradient(to right, #c5c5c5, #111111) 1;  */
-    /* border-image: linear-gradient(to bottom, #ff0000, #0000ff) 1;  */
-  /* border-left-style: outset;
-  border-top-style: outset  ;
- border-width: 1px; */
+    height: 550px;
+
+
   }
 
 
@@ -150,11 +143,11 @@
     width: 100%;
     height: 100%;
     background-color: #c5c5c5;
-    /* Slide color */
+ 
     transition: top 0.7s ease;
     z-index: 0;
-    
-  
+
+
   }
 
 
@@ -172,23 +165,27 @@
   /* Change text color on hover */
   .feature-box-01:hover>* {
     color: #fff;
-    /* New text color */
+  
+  }
+
+    .feature-content h4 {
+ font-size: large;
   }
 
   /* basic everything */
   body {
     background-color: #111111 !important;
     color: #fff;
-  font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 
 
   }
 
-  
-.feature-content li {
+
+  .feature-content li {
     padding-left: 15px;
     padding-bottom: 15px;
-}
+  }
 
   /* skill bar and box  */
 
@@ -258,7 +255,9 @@
   }
 
 
-
+  .skills-titles {
+    margin-bottom: 20px;
+  }
 
 
   .skill-lt .skill-bar {
@@ -954,9 +953,9 @@ progress {
 
   .education-box {
 
- 
+
     text-align: left;
- 
+
     list-style-type: none;
     padding: 8% 8%;
 
@@ -12967,11 +12966,27 @@ p {
   font-weight: 700;
   letter-spacing: 0.0625em;
   text-transform: uppercase;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 1.4rem;
+  font-weight: bold;
+  letter-spacing: 1px;
 }
 
-#mainNav .navbar-brand img {
+/* old */
+
+/* #mainNav .navbar-brand {
+  color: #ffc800;
+  font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-weight: 700;
+  letter-spacing: 0.0625em;
+  text-transform: uppercase;
+} */
+
+/* #mainNav .navbar-brand img {
   height: 1.5rem;
-}
+} */
 
 #mainNav .navbar-nav .nav-item .nav-link {
   font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
@@ -13034,8 +13049,8 @@ p {
 }
 
 .button-container {
-      max-width: 630px;
-    margin: 0 auto 15px;
+  max-width: 630px;
+  margin: 0 auto 15px;
 }
 
 .employers {
@@ -13103,7 +13118,7 @@ header.masthead {
   padding-bottom: 6rem;
   text-align: center;
   color: #fff;
-  background-image: url("../assets/img/glow4.jpg");
+  background-image: url("../assets/img/banners/glow4.jpg");
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-position: center center;
@@ -13116,7 +13131,11 @@ header.masthead {
   text-align: center;
   color: #fff;
   background-color: #111111;
-
+  background-image: url("../assets/img/banners/DBS_banner_darker.jpg");
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position: center top;
+  background-size: cover;
 
 }
 
@@ -13132,7 +13151,7 @@ header.masthead {
 header.casestudy .casestudy-subheading {
   font-size: 1.8rem;
   font-style: italic;
-  color: grey;
+  color: white;
   line-height: 1.7rem;
   margin-bottom: 25px;
 
@@ -13172,6 +13191,20 @@ header.casestudy .casestudy-heading {
   }
 
   header.masthead .masthead-heading {
+    font-size: 4.5rem;
+    font-weight: 700;
+    line-height: 4.5rem;
+    margin-bottom: 4rem;
+  }
+
+  header.casestudy .casestudy-subheading {
+    font-size: 2.25rem;
+    font-style: italic;
+    line-height: 2.25rem;
+    margin-bottom: 2rem;
+  }
+
+  header.casestudy .casestudy-heading {
     font-size: 4.5rem;
     font-weight: 700;
     line-height: 4.5rem;
@@ -13560,14 +13593,14 @@ header.casestudy .casestudy-heading {
 
 .education-box {
 
-       /* border: 3px outset;
+  /* border: 3px outset;
   border-image-slice: 1;
 
    border-image-source: linear-gradient(to left, #111111, #c5c5c5); */
   text-align: left;
-   background-color: #000;
-     box-shadow: 10px 20px 19px rgba(0, 0, 0, .5);
-     background-color: #111111;
+  background-color: #000;
+  box-shadow: 10px 20px 19px rgba(0, 0, 0, .5);
+  background-color: #111111;
   list-style-type: none;
   padding: 8% 8%;
 
@@ -13600,10 +13633,10 @@ header.casestudy .casestudy-heading {
 
   text-align: left;
 
-     box-shadow: 10px 20px 19px rgba(0, 0, 0, .5);
-     background-color: #111111;
+  box-shadow: 10px 20px 19px rgba(0, 0, 0, .5);
+  background-color: #111111;
   list-style-type: none;
- 
+
   vertical-align: middle;
 
   height: 450px;
@@ -13611,13 +13644,13 @@ header.casestudy .casestudy-heading {
 }
 
 .experience-box span {
-color: black;
-    font-weight: 600;
-    padding: 5px 12px;
-    margin-bottom: 10px;
-    margin-top: 10px;
-    border-radius: 30px;
-    display: inline-block;
+  color: black;
+  font-weight: 600;
+  padding: 5px 12px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  border-radius: 30px;
+  display: inline-block;
 
 
 }
@@ -13631,9 +13664,9 @@ color: black;
   text-align: left;
   list-style-type: none;
   vertical-align: middle;
- height: 450px;
-   box-shadow: 10px 20px 19px rgba(0, 0, 0, .5);
-     background-color: #111111;  
+  height: 450px;
+  box-shadow: 10px 20px 19px rgba(0, 0, 0, .5);
+  background-color: #111111;
 }
 
 .skill-lt {
@@ -13790,3 +13823,34 @@ section#contact form#contactForm :-ms-input-placeholder {
   font-size: 40px;
 }
 
+.nav-left,
+.nav-right {
+  margin-top: 9px;
+  display: flex;
+  gap: 1.5rem;
+  vertical-align: center;
+}
+
+/* Responsive Layout */
+@media (max-width: 768px) {
+
+  .nav-left,
+  .nav-right {
+    display: none;
+  }
+
+  .nav-logo {
+    position: static;
+    transform: none;
+    margin-right: auto;
+  }
+
+  .hamburger {
+    display: flex;
+    margin-left: auto;
+  }
+
+  .mobile-menu.show {
+    display: flex;
+  }
+}
