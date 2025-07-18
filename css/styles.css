@@ -129,13 +129,16 @@
     margin: 20px;
 
     height: 550px;
+    /* border: 2px outset;
+  border-image-slice: 1;
 
+   border-image-source: linear-gradient(to left, #111111, #c5c5c5a2);  */
 
   }
 
 
 
-  .feature-box-01::before {
+  /* .feature-box-01::before {
     content: '';
     position: absolute;
     top: -100%;
@@ -148,29 +151,73 @@
     z-index: 0;
 
 
-  }
+  } */
 
 
-  .feature-box-01:hover::before {
+  /* .feature-box-01:hover::before {
     top: 0;
-  }
+  } */
 
   /* Ensure text stays above the sliding background */
-  .feature-box-01>* {
+  /* .feature-box-01>* {
     position: relative;
     z-index: 1;
     transition: color 0.7s ease;
-  }
+  } */
 
   /* Change text color on hover */
-  .feature-box-01:hover>* {
+  /* .feature-box-01:hover>* {
     color: #fff;
+
   
+  } */
+
+   .feature-box-01 a {
+    text-decoration: none;
+    color: white;
+   }
+
+  .feature-content h4 {
+    margin-top: 20px;
+    font-size: 30px;
+    line-height: 36px;
+ 
+
   }
 
-    .feature-content h4 {
- font-size: large;
+    .feature-content h4,
+  .feature-content span {
+
+      transform: translateY(60px);
+    transition: transform 0.5s ease;
+
   }
+
+  .feature-content:hover h4, 
+  .feature-content:hover span {
+
+    transform: translateY(-25px);
+
+    transition: transform 0.5s ease in out;
+  }
+
+
+
+
+
+  .feature-content p {
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(10px);
+    transition: opacity 0.5s ease, transform 0.5s ease, visibility 0.5s;
+  }
+
+  .feature-content:hover p {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+  }
+
 
   /* basic everything */
   body {
