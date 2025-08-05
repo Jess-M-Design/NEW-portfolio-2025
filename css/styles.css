@@ -132,7 +132,7 @@
 
     height: 500px;
 
-        /* border-left: 3px solid transparent;
+    /* border-left: 3px solid transparent;
             border-top: 3px solid transparent;
             background:
                 linear-gradient(to bottom, #c5c5c57c, #111111) left top/2px 100% no-repeat,
@@ -196,12 +196,12 @@
     box-shadow: 10px 20px 19px rgba(0, 0, 0, .5);
     background-color: #111111;
     padding: 15% 12%;
- 
+
     margin: 20px;
 
     height: 600px;
 
-        /* border-left: 3px solid transparent;
+    /* border-left: 3px solid transparent;
             border-top: 3px solid transparent;
             background:
                 linear-gradient(to bottom, #c5c5c57c, #111111) left top/2px 100% no-repeat,
@@ -228,11 +228,11 @@
 
 
 
-.feature-content-03 p {
+  .feature-content-03 p {
     margin-top: 30px;
-  font-size: 15px;
-  text-align: left;
-}
+    font-size: 15px;
+    text-align: left;
+  }
 
 
 
@@ -2590,7 +2590,7 @@ progress {
     -webkit-overflow-scrolling: touch;
   }
 
-   
+
 }
 
 @media (max-width: 991.98px) {
@@ -2599,11 +2599,13 @@ progress {
     -webkit-overflow-scrolling: touch;
   }
 
-   .nav-left {
+  .nav-left {
     flex-direction: row !important;
     display: flex;
     justify-content: center !important;
   }
+
+
 }
 
 @media (max-width: 1199.98px) {
@@ -4157,6 +4159,8 @@ fieldset:disabled .btn {
     right: 0;
     left: auto;
   }
+
+  
 }
 
 @media (min-width: 1200px) {
@@ -6361,32 +6365,24 @@ fieldset:disabled .btn {
 
 /* looking for  */
 @media (max-width: 575.98px) {
-.nav-left {
-   
-  margin-bottom: 29px !important;
-
-
-}
+  
 }
 
 @media (max-width: 767.98px) {
-.nav-left {
-   
-  margin-bottom: 29px !important;
-
-
-}
-
- 
+  
 }
 
 @media (max-width: 991.98px) {
   .nav-left {
-   
-  margin-bottom: 29px !important;
+
+    top: -17px;
+    position: relative;
+    z-index: 100;
+    margin-top: 5px;
+
+  }
 
 
-}
 }
 
 @media (max-width: 1199.98px) {}
@@ -12755,7 +12751,7 @@ p {
   padding-top: 1rem;
   padding-bottom: 1rem;
   background-color: #111111;
-  /* filter: drop-shadow(0px 10px 10px #000000); */
+  filter: drop-shadow(0px 5px 5px #000000);
 }
 
 #mainNav .navbar-toggler {
@@ -12796,7 +12792,7 @@ p {
 
 #mainNav .navbar-nav .nav-item .nav-link {
   font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  font-size: 0.95rem;
+  font-size: 14px;
   color: #fff;
   letter-spacing: 0.0625em;
   padding-left: 10px;
@@ -12817,15 +12813,7 @@ p {
     transition: padding-top 0.3s ease-in-out, padding-bottom 0.3s ease-in-out;
   }
 
-  #mainNav .navbar-brand {
-    font-size: 1.5em;
-    transition: font-size 0.3s ease-in-out;
-  }
 
-  #mainNav .navbar-brand img {
-    height: 2rem;
-    transition: height 0.3s ease-in-out;
-  }
 
   /* #mainNav.navbar-shrink {
     padding-top: 1rem;
@@ -12843,7 +12831,7 @@ p {
   } */
 
   #mainNav .navbar-nav .nav-item {
-    margin-right: 1rem;
+    margin-right: .5rem;
   }
 
   #mainNav .navbar-nav .nav-item:last-child {
@@ -12948,7 +12936,7 @@ header.masthead {
 } */
 
 .mini-games-page {
-      position: relative;
+  position: relative;
   padding-top: 16%;
   padding-bottom: 10%;
   text-align: center;
@@ -13008,7 +12996,7 @@ header.masthead {
 }
 
 .double-bass-page {
-    position: relative;
+  position: relative;
   padding-top: 16%;
   padding-bottom: 10%;
   text-align: center;
@@ -13064,7 +13052,7 @@ header.masthead {
 }
 
 .rhythm-shine {
-      position: relative;
+  position: relative;
   padding-top: 16%;
   padding-bottom: 10%;
   text-align: center;
@@ -13692,9 +13680,10 @@ header.masthead {
 
 section#contact {
   background-color: #212529;
-  background-image: url("../assets/img/map-image.png");
+  /* background-image: url("../assets/img/map-image.png"); */
   background-repeat: no-repeat;
   background-position: center;
+  background-color: #111111;
 }
 
 section#contact .section-heading {
@@ -13770,17 +13759,17 @@ section#contact form#contactForm :-ms-input-placeholder {
 }
 
 .bigger-font {
-          margin-top: 20px;
-        font-size: 50px;
-        line-height: 36px;
-        margin-bottom: 10px;
-    font-weight: bold;
+  margin-top: 20px;
+  font-size: 50px;
+  line-height: 36px;
+  margin-bottom: 10px;
+  font-weight: bold;
 }
 
 .nav-left,
 .nav-right {
 
-    --bs-nav-link-padding-x: 0;
+  --bs-nav-link-padding-x: 0;
   --bs-nav-link-padding-y: 0.5rem;
 
   display: flex;
@@ -13797,10 +13786,10 @@ section#contact form#contactForm :-ms-input-placeholder {
 /* Responsive Layout */
 @media (max-width: 768px) {
 
-.img-brand {
-  max-width: 70%;
-  opacity: .8;
-}
+  .img-brand {
+    max-width: 70%;
+    opacity: .8;
+  }
 
   .nav-logo {
     position: static;
