@@ -6513,29 +6513,6 @@ fieldset:disabled .btn {
   }
 
 
-  .double-bass-page {
-    position: relative;
-    padding-top: 28% !important;
-    padding-bottom: 10%;
-
-  }
-
-
-
-  .cupid-page {
-    position: relative;
-    padding-top: 28% !important;
-    padding-bottom: 10%;
-  }
-
-
-  .mini-games-page {
-    position: relative;
-    padding-top: 28% !important;
-    padding-bottom: 10%;
-
-  }
-
   .rhythm-shine {
     position: relative;
     padding-top: 28% !important;
@@ -6545,21 +6522,44 @@ fieldset:disabled .btn {
 
   }
 
-
-  .salsa-app {
-    position: relative;
-    padding-top: 28% !important;
-    padding-bottom: 10%;
-
-  }
-
-
-  .rhythm-shine::before {
+   .rhythm-shine::before {
     content: "";
     position: absolute;
     padding-top: 28% !important;
 
   }
+
+   .yanis-marshall, .salsa-app, .mini-games-page, .solar-explorer, .cupid-page, .double-bass-page {
+ position: relative;
+    padding-top: 28% !important;
+    padding-bottom: 10%;
+
+  }
+
+   .yanis-marshall::before {
+    content: "";
+    position: absolute;
+    padding-top: 28% !important;
+
+  }
+
+  .solar-explorer {
+    position: relative;
+    padding-top: 28% !important;
+    padding-bottom: 10%;
+    background-position: center 20px !important;
+    max-height: 700px !important;
+
+  }
+
+   .solar-explorer::before {
+    content: "";
+    position: absolute;
+    padding-top: 28% !important;
+
+  }
+
+ 
 
   .feature-box-03 {
 
@@ -13185,13 +13185,14 @@ header.masthead::before {
 }
 
 .mini-games-page {
+    background-image: url("../assets/img/banners/pixelated_bg5.gif");
+
   position: relative;
   padding-top: 16%;
   padding-bottom: 10%;
   text-align: center;
   color: #fff;
   background-color: #111111;
-  background-image: url("../assets/img/banners/pixelated_bg5.gif");
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-position: center center;
@@ -13201,6 +13202,35 @@ header.masthead::before {
 }
 
 .mini-games-page::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  /* adjust opacity as needed */
+  z-index: 1;
+}
+
+.solar-explorer {
+    background-image: url("../assets/img/banners/solar-explorer_1024x535px.jpg");
+
+  position: relative;
+  padding-top: 16%;
+  padding-bottom: 10%;
+  text-align: center;
+  color: #fff;
+  background-color: #111111;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position: center top;
+  background-size: cover;
+  overflow: hidden;
+
+}
+
+.solar-explorer::before {
   content: "";
   position: absolute;
   top: 0;
@@ -13222,7 +13252,21 @@ header.masthead::before {
 
 }
 
+  .gallery {
+      padding: 40px 0;
+    }
 
+    .gallery img {
+      width: 100%;
+      height: auto;
+      border-radius: 10px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .gallery img:hover {
+      transform: scale(1.05);
+      box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+    }
 
 .square {
   width: 100%;
@@ -13305,6 +13349,65 @@ header.masthead::before {
 }
 
 .rhythm-shine::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  /* adjust opacity as needed */
+  z-index: 1;
+}
+
+
+.yanis-marshall {
+
+  background-image: url("/assets/img/banners/yanis_1024x535px.jpg");
+  position: relative;
+  padding-top: 16%;
+  padding-bottom: 10%;
+  text-align: center;
+  color: #fff;
+  background-color: #111111;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position: center center;
+  background-size: cover;
+  overflow: hidden;
+
+}
+
+.yanis-marshall::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  /* adjust opacity as needed */
+  z-index: 1;
+}
+
+.mambo-dinamico {
+
+  background-image: url("/assets/img/banners/mambo-dinamico.jpg");
+  position: relative;
+  padding-top: 16%;
+  padding-bottom: 10%;
+  text-align: center;
+  color: #fff;
+  background-color: #111111;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position: center center;
+  background-size: cover;
+  overflow: hidden;
+
+}
+
+.mambo-dinamico::before {
   content: "";
   position: absolute;
   top: 0;
@@ -13604,6 +13707,33 @@ header.masthead::before {
   font-size: 16px;
   line-height: 23px;
   font-style: italic;
+
+}
+
+.achieve-box p {
+  margin: 0;
+  opacity: .7;
+  font-size: 20px;
+  line-height: 23px;
+  font-style: italic;
+   text-transform: uppercase;
+
+}
+
+.achieve-box {
+  padding: 10%;
+  
+  width: 100%px;
+  text-align: center;
+
+  box-shadow: 10px 20px 19px rgba(0, 0, 0, .5);
+  background-color: #111111;
+  list-style-type: none;
+
+  vertical-align: middle;
+
+
+  border: 12px groove #c5c5c52d;
 
 }
 
