@@ -1,0 +1,55 @@
+# === General frontend / static site ===
+
+# build output (if you add bundling or build step later)
+dist/
+build/
+
+# dependencies (if you add npm / node dependencies later)
+node_modules/
+
+# caches, temp
+.cache/
+tmp/
+*.tmp
+*.temp
+
+# logs
+npm-debug.log
+yarn-debug.log
+yarn-error.log
+*.log
+
+# === OS / System files ===
+.DS_Store
+Thumbs.db
+
+# === Editor / IDE files ===
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# === Environment / secrets / configs (if you later use .env) ===
+.env
+.env.*
+.env.*.local
+
+# === Backups / swap / misc temp files ===
+*.swp
+*~
+__pycache__/
+*.pyc   # if you ever add python scripts
+*.lock
+
+# === Ignore build/deploy-generated static files (optional) ===
+/public/*.html
+/public/*.css
+/public/*.js
+/public/assets/
+/public/_site/
+/public/build/
+/public/dist/
+
+# === Ignore local OS or dev-machine artifacts ===
+.DS_Store
+Thumbs.db
